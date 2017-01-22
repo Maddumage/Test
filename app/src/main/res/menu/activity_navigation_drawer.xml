@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/list"
+            android:title="View Students" />
+        <item
+            android:id="@+id/nav_reg"
+            android:icon="@drawable/ic_action_person_add_light"
+            android:title="Register New" />
+        <item
+            android:id="@+id/nav_marks"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Student Marks" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+</menu>

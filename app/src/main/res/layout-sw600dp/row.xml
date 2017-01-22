@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1">
+    <Spinner
+        android:id="@+id/spSubject"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_weight="0.38" />
+
+    <EditText
+        android:id="@+id/etMarks"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:focusableInTouchMode="true"
+        android:inputType="numberDecimal"
+        android:hint="Marks"
+        android:layout_weight="0.34" />
+
+    <ImageButton
+        android:id="@+id/btnRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button1"
+        android:src="@drawable/ic_action_remove"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Delete"
+        android:textColor="#0099CC"
+        android:padding="5dp"
+        android:layout_margin="5dp" />
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:src="@drawable/ic_action_add"
+            android:focusableInTouchMode="false"
+            android:text="Edit Data"
+            android:textColor="#0099CC"
+            android:padding="5dp"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</LinearLayout>
