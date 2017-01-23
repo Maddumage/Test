@@ -18,16 +18,31 @@
         <!--android:layout_height="80dp"-->
         <!--android:src="@drawable/student"-->
         <!--android:background="@drawable/bg_circle" />-->
-    <com.github.siyamed.shapeimageview.CircularImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:siBorderWidth="2dp"
-        android:layout_gravity="center|top"
-        android:src="@drawable/user"
-        android:scaleType="centerCrop"
-        android:id="@+id/ivProfile"
-        app:siBorderColor="#ffffff"/>
+    <!--<com.github.siyamed.shapeimageview.CircularImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--app:siBorderWidth="2dp"-->
+        <!--android:layout_gravity="center|top"-->
+        <!--android:src="@drawable/user"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:id="@+id/ivProfile"-->
+        <!--app:siBorderColor="#ffffff"/>-->
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/user"
+        android:id="@+id/ivProfile"
+        app:border_color="@android:color/white"
+        app:border_width="2dp"
+        app:finalHeight="@dimen/image_final_width"
+        app:finalYPosition="2dp"
+        app:layout_behavior="com.example.amilah.test.utill.AvatarImageBehavior"
+        app:startHeight="2dp"
+        app:startToolbarPosition="2dp"
+        app:startXPosition="2dp"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
